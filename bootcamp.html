@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bootstrap Tutorial</title>
+
+  <!-- Bootstrap CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <!-- navbar-expand-lg: Expands the navbar on large screens -->
+  <!-- navbar-dark: Darkens the text on navbar -->
+  <!-- bg-dark: Sets the background color to dark -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <!-- navbar-brand: Branding element for the website -->
+      <a class="navbar-brand" href="#">Bootstrap Tutorial</a>
+      
+      <!-- navbar-toggler: Button to collapse the navbar on small screens -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- collapse navbar-collapse: Controls the collapsing of the navbar -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <!-- navbar-nav: The unordered list for navbar items -->
+        <ul class="navbar-nav">
+          <!-- nav-item: Each navigation item -->
+          <li class="nav-item">
+            <!-- nav-link: Links in the navbar -->
+            <a class="nav-link active" aria-current="page" href="#gridSystem">Grid System</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#buttons">Buttons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#typography">Text</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#forms">Forms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tables">Tables</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Grid System Section -->
+   <!-- p-5 padding of 5 -->
+  <section id="gridSystem" class="p-5">
+    <!-- container: Creates a centered and padded content area -->
+    <div class="container text-center">
+        <!-- mb-4 margin bottom of 4 -->
+      <h2 class="mb-4">Grid System</h2>
+      <!-- row: Wraps columns horizontally -->
+      <div class="row justify-content-center">
+        <!-- col-md-4: Column spans 4 units on medium screens -->
+        <!-- col-sm-6: Column spans 6 units on small screens -->
+        <!-- bg-black: black background color -->
+        <!-- p-3: Padding inside the column -->
+        <!-- shadow-lg: Large shadow effect -->
+        <div class="col-md-4 col-sm-6 p-3 rounded shadow-lg grid-item grid-item-1">
+          <p>Grid 1</p>
+        </div>
+        <div class="col-md-4 col-sm-6 p-3 rounded shadow-lg grid-item grid-item-2">
+          <p>Grid 2</p>
+        </div>
+        <div class="col-md-4 col-sm-12 p-3 rounded shadow-lg grid-item grid-item-3">
+          <p>Grid 3</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Buttons Section -->
+  <section id="buttons" class="p-5 bg-light text-center">
+    <div class="container">
+      <h2 class="mb-4">Buttons</h2>
+      <!-- btn: Base Bootstrap button -->
+      <!-- btn-primary: Primary colored button -->
+      <!-- me-2: Margin to the end (right) by 2 units -->
+      <button class="btn btn-primary me-2 mb-2 btn-lg" onclick="buttonClicked('Primary')">Primary Button</button>
+
+      <!-- btn-secondary: Secondary colored button -->
+      <button class="btn btn-secondary me-2 mb-2 btn-sm" onclick="buttonClicked('Secondary')">Secondary Button</button>
+
+      <!-- btn-success: Success (green) colored button -->
+      <button class="btn btn-success me-2 mb-2" onclick="buttonClicked('Success')">Success Button</button>
+
+      <!-- btn-danger: Danger (red) colored button -->
+      <button class="btn btn-danger me-2 mb-2 btn-sm" onclick="buttonClicked('Danger')">Danger Button</button>
+
+      <!-- btn-warning: Warning (yellow) colored button -->
+      <button class="btn btn-warning me-2 mb-2 text-white btn-lg" onclick="buttonClicked('Warning')">Warning Button</button>
+    </div>
+  </section>
+
+  <!-- Typography Section -->
+  <section id="typography" class="p-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Text</h2>
+      <!-- display-1: Large heading size -->
+      <h1 class="display-1">Heading 1</h1>
+      <!-- display-2: Second-largest heading size -->
+      <h2 class="display-2">Heading 2</h2>
+      <!-- display-3: Third-largest heading size -->
+      <h3 class="display-3">Heading 3</h3>
+      <!-- lead: Stand-out paragraph style -->
+      <p class="lead">Paragraph text that stands out more</p>
+      <p>Regular paragraph text.</p>
+    </div>
+  </section>
+
+  <!-- Forms Section -->
+  <section id="forms" class="p-5 bg-light text-center">
+    <div class="container">
+      <h2 class="mb-4">Form Submission</h2>
+      <!-- form: Form for collecting user input -->
+      <form>
+        <!-- mb-3: Margin-bottom 3 units -->
+        <!-- form-control: Bootstrap styling for input fields -->
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Enter email" required>
+        </div>
+        <div class="mb-3">
+          <input type="password" class="form-control" placeholder="Password" required>
+        </div>
+        <!-- form-check: Bootstrap styling for checkbox -->
+        <div class="mb-3 d-flex justify-content-center">
+          <div class="check-wrapper">
+            <input type="checkbox" class="form-check-input me-2" id="exampleCheck1" required>
+            <label class="form-check-label" for="exampleCheck1">Check Me</label>
+          </div>
+        </div>
+        <!-- btn-primary: Primary colored submit button -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Tables Section -->
+  <section id="tables" class="p-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Tables</h2>
+      <!-- table: Basic table -->
+      <!-- table-striped: Adds zebra-striping to rows -->
+      <!-- table-hover: Adds hover effects to table rows -->
+      <table class="table table-striped table-hover">
+        <thead>
+          <!-- th: Table header cell -->
+          <!-- scope="col": Defines header as column scope -->
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- tr: Table row -->
+          <!-- td: Table data cell -->
+          <tr>
+            <th scope="row">1</th>
+            <td>Nick</td>
+            <td>F</td>
+            <td>njf5380@psu.edu</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Example</td>
+            <td>Test</td>
+            <td>email@email.com</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Etc</td>
+            <td>So on</td>
+            <td>test@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- bg-dark: Dark background color -->
+  <!-- text-light: Light text color -->
+  <!-- p-3: Padding inside the footer -->
+  <footer class="text-center p-3 bg-dark text-light">
+    © 2024 Bootstrap Tutorial
+  </footer>
+
+  <!-- Bootstrap JavaScript via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
+

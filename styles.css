@@ -1,0 +1,107 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+  }
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+  }
+  
+  /* Navbar styles */
+  .navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* Navbar items aligned to the right */
+  .navbar-nav .nav-link {
+    font-size: 20px;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  /* Navbar link hover effect */
+  .navbar-nav .nav-link:hover {
+    color: #f8c146;
+  }
+  
+  /* Grid System Section */
+  .grid-item {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-bottom: 20px;
+  }
+
+  .grid-item-1 {
+    background-color: aquamarine;
+  }
+  .grid-item-2 {
+    background-color: coral;
+    color: white;
+  }
+  .grid-item-3 {
+    background-color: crimson;
+    color: white;
+  }
+  
+  /* Hover effects for grid system */
+  .grid-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Section padding */
+  section {
+    padding: 60px 0;
+  }
+  
+  /* Typography header styles */
+  h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 30px;
+  }
+
+  /* Button alignment and spacing */
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    
+  }
+  
+  /* Button hover effects */
+  .btn-primary:hover, .btn-secondary:hover, .btn-success:hover, .btn-danger:hover, .btn-warning:hover {
+    background-color: #1d2124;
+    border-color: #1d2124;
+  }
+
+  .check-wrapper {
+    background-color: lightblue;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 10px;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Custom table styles */
+  .table {
+    width: 100%;
+    font-size: 20px;
+  }
+  .table thead th {
+    background-color: #343a40;
+    color: #f8f9fa;
+  }
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa;
+  }
+  
