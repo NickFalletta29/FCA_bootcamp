@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootcamp</title>
+
+  <!-- Bootstrap CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+    <!-- Variables Section -->
+    <section class="Variables p-5">
+        <div class="container text-center">
+            <!-- Section Title -->
+            <h2 class="mb-4">Variables</h2>
+
+            <!-- Flexbox for variables and buttons -->
+            <div class="d-flex justify-content-center mb-3">
+                <div>
+                    <!-- Display variable 1 -->
+                    <div class="d-flex">
+                        <h4 class="me-1">Num 1:</h4>
+                        <h4 id="varNum1">0</h4>
+                    </div>
+                    <!-- Plus and Minus buttons for variable 1 -->
+                    <button class="btn btn-primary" id="plusBtn1">+1</button>
+                    <button class="btn btn-danger" id="minusBtn1">-1</button>
+                </div>
+                <div class="ms-5">
+                    <!-- Display variable 2 -->
+                      <!-- span wont put text on a new line -->
+                    <h4>Num 2: <span id="varNum2">5</span></h4>
+                    <!-- Plus and Minus buttons for variable 2 -->
+                    <button class="btn btn-primary" id="plusBtn2">+1</button>
+                    <button class="btn btn-danger" id="minusBtn2">-1</button>
+                </div>
+            </div>
+
+            <!-- Toggle Button for Next/Back -->
+            <div>
+                <h4>Text Example: <span id="varText">Next</span></h4>
+                <button class="btn btn-info" id="changeBtn">Change Text</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lists Section -->
+    <section class="Lists py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Lists</h2>
+            <!-- Horizontal list for larger screens, vertical for small screens -->
+            <!-- list-group-horizontal-md makes the list horizontal on lg screens and above -->
+            <ul id="itemList" class="list-group list-group-horizontal-lg justify-content-center mb-3"></ul>
+            <!-- Add and Remove buttons -->
+            <button class="btn btn-primary me-2" id="addItem">Add</button>
+            <button class="btn btn-danger" id="removeItem">Remove</button>
+        </div>
+    </section>
+
+    <section class="Keyframing py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Keyframing</h2>
+            <div class="box mb-4">Hover over me</div>
+            <div class="box2 mb-4">Hover over me too</div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="text-center p-3 bg-dark text-light position-fixed w-100">
+        © 2024 Bootstrap Tutorial
+    </footer>
+
+  <!-- Bootstrap JavaScript via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom Script -->
+  <script src="script2.js"></script>
+</body>
+</html>
+

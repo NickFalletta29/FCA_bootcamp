@@ -1,0 +1,64 @@
+#variable1, #variable2 {
+    font-size: 24px;
+}
+
+#itemList {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#itemList .list-group-item {
+    padding: 20px; 
+    margin: 0 10px;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+}
+
+#itemList .list-group-item:nth-child(even) {
+    background-color: #28a745;
+}
+
+.box,
+.box2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px; 
+    background-color: #ffc107;
+    margin: 0 auto;
+}
+
+.box:hover {
+    animation: twirl 1.5s 1;
+}
+
+.box2:hover {
+    animation: jump 1s infinite; 
+}
+
+/* Keyframe Animations */
+@keyframes twirl {
+    0% { transform: rotate(0deg); opacity: 1; }
+    50% { transform: rotate(180deg); opacity: 0.5; }
+    100% { transform: rotate(360deg); opacity: 1; }
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+    }
+}
+
+footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+    padding: 20px; 
+    text-align: center;
+    bottom: 0;
+}
+
+  
+  
