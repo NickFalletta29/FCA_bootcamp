@@ -1,0 +1,127 @@
+.app {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, rgb(62, 0, 0), rgb(0, 0, 71));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Arial", sans-serif;
+}
+
+.machine {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: darkred;
+    border: 5px solid black;
+    border-radius: 20px 20px 0 0;
+
+    width: 500px;
+    height: 800px;
+
+    box-shadow: 0 8px 20px black, inset 0 -10px 10px black;
+}
+
+.screen {
+    width: 450px;
+    height: 200px;
+    background-color: rgb(163, 163, 163);
+    border: 5px solid black;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40px;
+}
+
+.digits {
+    color: black;
+    font-size: 90px;
+
+    display: flex;
+}
+
+.digit {
+    padding: 50px;
+}
+
+.ready {
+    color: green;
+}
+
+.leverBase{
+    background-color: darkgray;
+    border: 3px solid black;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 8%;
+    height: 15%;
+
+    margin-top: 65%;
+}
+
+.lever {
+    background-color: black;
+    border-radius: 15px;
+    width: 15px;
+    height: 175px;
+
+    transform: translate(0, -75px);
+
+    position: absolute;
+
+}
+
+.btn {
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    background-color: blue;
+
+    box-shadow: inset 10px 10px 30px rgb(9, 0, 77);
+
+    transform: translate(0, -175px);
+
+    position: absolute;
+}
+
+
+.pull {
+    animation: pullLever 1s 1;
+}
+.pull2 {
+    animation: pullLever2 1s 1;
+    transition: all ease;
+}
+
+
+@keyframes pullLever {
+    0%, 100% {
+        height: 175px;
+    }
+    20%, 70% {
+        height: 0;
+    }
+    50% {
+        height: 175px;
+        transform: translate(0, 90px);
+    }
+}
+
+@keyframes pullLever2 {
+    0%, 100% {
+
+    }
+    50% {
+        transform: translate(0, 200px);
+    }
+}
