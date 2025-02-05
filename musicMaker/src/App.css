@@ -8,3 +8,79 @@
   background-color: #f4f4f4;
   font-family: Arial, sans-serif;
 }
+
+h1 {
+  color: black;
+}
+
+.music-sheet {
+  display: flex;
+  justify-content: center;
+
+  width: 90%;
+  height: 400px;
+  border: 2px solid black;
+
+  margin: 20px 0;
+
+  overflow: hidden;
+
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid black;
+
+  width: calc(100%/16);
+}
+
+.note-space {
+  height: calc(100%/8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.note-space.empty {
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+.note-space.filled {
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.playBtn,
+.clearBtn {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: green;
+
+  color: white;
+
+  border: none;
+  cursor: pointer;
+
+  margin-top: 10px;
+
+  transition: all .25s ease-in-out;
+}
+
+.clearBtn {
+  background-color: red;
+}
+
+.playBtn:hover {
+  background-color: darkgreen;
+}
+.clearBtn:hover {
+  background-color: darkred;
+}
